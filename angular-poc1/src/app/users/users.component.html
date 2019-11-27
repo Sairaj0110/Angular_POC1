@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+
+            <h3>User Deatils : </h3>
+            <div *ngFor="let user of usersArray">
+                Name : {{user.name}} <br>
+                Age : {{user.age}}
+                <br><br>
+            </div>
+
+            <button (click)="toggle()" style="border-radius: 8px;border: none;height: 25px;background-color: cadetblue;">Toggle flag</button>
+            <br><br>
+            <div *ngIf="show">Flag is true</div>
+            <div *ngIf="!show">Flag is false</div>
+
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+    </div>
+</div>
